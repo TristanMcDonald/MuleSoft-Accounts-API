@@ -23,5 +23,17 @@ title: MuleSoft Accounts API
     queryParameters:
       source:
         required: true
+
+    body:
+      application/json:
+        type: AmericanFlight
+        examples:
+          input: !include /examples/AccountsNoIDExample.raml
+    responses:
+      201:
+        body:
+          application/json:
+            example:
+              message: Flight added (but not really)
         
                   
